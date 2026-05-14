@@ -1,17 +1,47 @@
 [gd_scene format=3 uid="uid://djt5bj5e66to2"]
 
-[ext_resource type="Texture2D" uid="uid://crdu3g8iglq8" path="res://icon.svg" id="1_8or6t"]
 [ext_resource type="Script" uid="uid://b1o7ol3yp3n01" path="res://scripts/player.gd" id="1_unwft"]
+[ext_resource type="Texture2D" uid="uid://cmixd2lu3k4kr" path="res://assets/Skins.png" id="2_unwft"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(121, 125)
+[sub_resource type="CircleShape2D" id="CircleShape2D_kthid"]
+radius = 90.33826
 
 [node name="player" type="CharacterBody2D" unique_id=916075343]
+rotation = -1.5696604
 script = ExtResource("1_unwft")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=917315132]
-texture = ExtResource("1_8or6t")
+[node name="Node2D" type="Node2D" parent="." unique_id=1466435845]
+
+[node name="corpo" type="Sprite2D" parent="Node2D" unique_id=1187217535]
+position = Vector2(-3.0170367, -14.996583)
+texture = ExtResource("2_unwft")
+region_enabled = true
+region_rect = Rect2(53, 1004, 198, 105)
+
+[node name="braco E" type="Sprite2D" parent="Node2D" unique_id=1345474954]
+position = Vector2(-86.003975, 71.5)
+rotation = 0.007175684
+scale = Vector2(0.9994351, 0.9646477)
+texture = ExtResource("2_unwft")
+region_enabled = true
+region_rect = Rect2(503, 861, 103, 198)
+
+[node name="braco D" type="Sprite2D" parent="Node2D" unique_id=1453553107]
+position = Vector2(55.986374, 78.00456)
+rotation = 0.011441302
+scale = Vector2(0.93711203, 0.9012501)
+texture = ExtResource("2_unwft")
+region_enabled = true
+region_rect = Rect2(683, 844, 132, 242)
+
+[node name="cabeca" type="Sprite2D" parent="Node2D" unique_id=2107602332]
+position = Vector2(-3, 7)
+scale = Vector2(0.9634146, 0.91463417)
+texture = ExtResource("2_unwft")
+region_enabled = true
+region_rect = Rect2(270, 835, 164, 164)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=684756027]
-position = Vector2(-0.5, -0.5)
-shape = SubResource("RectangleShape2D_onrkg")
+visible = false
+position = Vector2(-4, 13)
+shape = SubResource("CircleShape2D_kthid")

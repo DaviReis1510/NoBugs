@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://vkwfmv8b507m"]
+
+[ext_resource type="Texture2D" uid="uid://crdu3g8iglq8" path="res://icon.svg" id="1_wbtpq"]
+[ext_resource type="PackedScene" uid="uid://djt5bj5e66to2" path="res://cenas/player.tscn" id="2_vvk4p"]
+
+[node name="Node2D" type="Node2D" unique_id=1144451629]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=461161204]
+position = Vector2(574, 322.5)
+scale = Vector2(8.984375, 5.1171875)
+texture = ExtResource("1_wbtpq")
+
+[node name="ColorRect" type="ColorRect" parent="Icon" unique_id=1780699016]
+offset_left = -63.55478
+offset_top = -62.827477
+offset_right = 64.33389
+offset_bottom = 62.43663
+color = Color(0, 0, 0, 0.29411766)
+
+[node name="player" parent="." unique_id=916075343 instance=ExtResource("2_vvk4p")]
+position = Vector2(84.00003, 111.000015)
+rotation = -1.568802
+skew = -0.0013474226
